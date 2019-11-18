@@ -1,0 +1,48 @@
+.main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    .main-left{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            font-size: 8rem;
+            margin-bottom: 5%;
+            color: @airBNB-red;
+        }
+        p{
+            font-size: 2.7rem;
+            margin-bottom: 3%;
+            color: @airBNB-green;
+        }
+        .buttonDiv{
+            width: 100%;
+            
+            button{
+                text-align: center;
+                width: 80%;
+                margin-right: 5%;
+                margin-left: 5%;
+                line-height: 5rem;
+                border-radius: 15px;
+                background-color: @airBNB-red;
+                font-size: 2rem;
+                color: @airBNB-gray;
+            }
+        }
+
+    }// main left flex-box ends here
+    .main-right{
+        width: 60%;
+        .main-image{
+            max-width: 100%;
+        }
+    }// main right flex-box ends here
+}//main container ends here
