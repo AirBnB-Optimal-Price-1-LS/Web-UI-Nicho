@@ -1,3 +1,9 @@
+.subTestimonyFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -132,8 +138,34 @@ table {
 html {
   font-size: 62.5%;
 }
+<<<<<<< HEAD
 html {
   background-color: white;
+=======
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+header .navLogo {
+  width: 30%;
+}
+header .navBar {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+header .navBar a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+header .navBar a a:hover {
+  text-decoration: none;
+>>>>>>> cb47b1217c5f4991795922b9d21adb455764bc4e
 }
 
 h1,
@@ -142,9 +174,9 @@ h3,
 h4,
 h5 {
   font-family: 'Open Sans', sans-serif;
-  color: @airBNB-lightGray;
+  
 }
 /*Feature starts here*/
 h2{
-  font-size: 3.2 rem
-}
+  font-size: 3rem;
+  }
