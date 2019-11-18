@@ -158,7 +158,9 @@ header .navBar {
 header .navBar a {
   font-size: 1.8rem;
   text-decoration: none;
+  color: #FF5A5F;
 }
-header .navBar a a:hover {
+header .navBar a:hover {
   text-decoration: none;
+  color: #00A699;
 }
