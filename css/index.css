@@ -186,6 +186,11 @@ h2 {
 .features .coins {
   width: 88%;
 }
+.partnerships {
+  background-color: #767676;
+  width: 90%;
+  margin: 5% auto;
+}
 #footerNav a {
   font-size: 2rem;
   text-decoration: none;
