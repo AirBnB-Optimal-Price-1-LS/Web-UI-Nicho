@@ -181,10 +181,13 @@ h2 {
 }
 .features img {
   width: 85%;
-  margin: 2% 0 8% 8%;
+  margin: 2% 0 8% 0%;
+}
+.features .coins {
+  width: 88%;
 }
 #footerNav a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   color: black;
   padding: 5%;
@@ -195,4 +198,7 @@ h2 {
   align-items: center;
   width: 90%;
   margin: 0 5%;
+}
+#footerNav a:hover {
+  color: #FF5A5F;
 }
