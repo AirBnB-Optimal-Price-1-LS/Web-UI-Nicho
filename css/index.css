@@ -1,8 +1,38 @@
-.subTestimonyFlex {
+.phoneFlex {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.phoneNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+.phoneNav .anchor {
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-bottom: solid 1px #00A699;
+  text-align: center;
+}
+.quoteTablet {
+  line-height: 3.5rem;
+  color: #484848;
+  margin-top: 1.5%;
+  margin-bottom: 1%;
+}
+.mainSection-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainLeft-flex {
+  width: 100%;
+  align-items: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -147,13 +177,43 @@ header {
   margin-top: 1%;
   margin-bottom: 2%;
 }
+@media (max-width:500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 header .navLogo {
   width: 30%;
+}
+@media (max-width:500px) {
+  header .navLogo {
+    width: 100%;
+    text-align: center;
+  }
 }
 header .navBar {
   width: 50%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width:500px) {
+  header .navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  header .navBar .anchor {
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-bottom: solid 1px #00A699;
+    text-align: center;
+  }
 }
 header .navBar a {
   font-size: 2.2rem;
@@ -171,6 +231,14 @@ header .navBar a:hover {
   margin-left: 5%;
   margin-right: 5%;
 }
+@media (max-width:500px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .main .main-left {
   width: 40%;
   display: flex;
@@ -179,11 +247,23 @@ header .navBar a:hover {
   align-items: center;
   margin: 1%;
 }
+@media (max-width:500px) {
+  .main .main-left {
+    width: 100%;
+    align-items: center;
+  }
+}
 .main .main-left h1 {
   width: 100%;
   font-size: 7.5rem;
   margin-bottom: 5%;
   color: #FF5A5F;
+}
+@media (max-width:500px) {
+  .main .main-left h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
 }
 .main .main-left p {
   width: 100%;
@@ -191,9 +271,19 @@ header .navBar a:hover {
   margin-bottom: 3%;
   color: #00A699;
 }
+@media (max-width:500px) {
+  .main .main-left p {
+    text-align: center;
+  }
+}
 .main .main-left .buttonDiv {
   width: 100%;
   margin-bottom: 2.5%;
+}
+@media (max-width:500px) {
+  .main .main-left .buttonDiv {
+    text-align: center;
+  }
 }
 .main .main-left .buttonDiv button {
   text-align: center;
@@ -226,6 +316,14 @@ header .navBar a:hover {
   font-size: 3rem;
   color: #484848;
 }
+@media (max-width:800px) {
+  .largeQuote .largeQuotePara {
+    line-height: 3.5rem;
+    color: #484848;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+  }
+}
 .testimony {
   display: flex;
   flex-direction: column;
@@ -234,6 +332,11 @@ header .navBar a:hover {
   margin-top: 1.5%;
   margin-right: 5%;
   margin-left: 5%;
+}
+@media (max-width:500px) {
+  .testimony {
+    margin-top: 5%;
+  }
 }
 .testimony .subContainer {
   border: 3px solid #FF5A5F;
@@ -244,6 +347,11 @@ header .navBar a:hover {
   flex-direction: column;
   align-items: center;
   box-shadow: 5px 10px #767676;
+}
+@media (max-width:500px) {
+  .testimony .subContainer {
+    margin-bottom: 5%;
+  }
 }
 .testimony .subContainer h3 {
   font-size: 3rem;
@@ -259,4 +367,27 @@ header .navBar a:hover {
 }
 .testimony .subContainer img {
   margin-bottom: 2%;
+}
+.meet {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  color: #767676;
+  margin-bottom: 5%;
+}
+.headShotContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.headShotContainer .teamMember {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  border: 2px #767676 solid;
 }
