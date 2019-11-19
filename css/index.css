@@ -179,3 +179,16 @@ h2 {
   width: 85%;
   margin: auto;
 }
+#footerNav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  padding: 5%;
+}
+#footerNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 5%;
+}
