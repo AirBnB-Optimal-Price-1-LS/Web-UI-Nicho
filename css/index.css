@@ -386,8 +386,12 @@ header .navBar a:hover {
 .headShotContainer .teamMember {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 20%;
   border: 2px #767676 solid;
+}
+.headShotContainer .teamMember div {
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
 }
