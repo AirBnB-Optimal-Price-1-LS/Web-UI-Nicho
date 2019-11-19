@@ -164,15 +164,6 @@ header .navBar a:hover {
   text-decoration: none;
   color: #00A699;
 }
-.largeQuote {
-  width: 100%;
-  background-color: #FF5A5F;
-}
-.largeQuote .largeQuotePara {
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: 3.75rem;
-}
 .main {
   display: flex;
   align-items: flex-start;
@@ -186,19 +177,23 @@ header .navBar a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 1%;
 }
 .main .main-left h1 {
-  font-size: 8rem;
+  width: 100%;
+  font-size: 7.5rem;
   margin-bottom: 5%;
   color: #FF5A5F;
 }
 .main .main-left p {
+  width: 100%;
   font-size: 2.7rem;
   margin-bottom: 3%;
   color: #00A699;
 }
 .main .main-left .buttonDiv {
   width: 100%;
+  margin-bottom: 2.5%;
 }
 .main .main-left .buttonDiv button {
   text-align: center;
@@ -216,4 +211,16 @@ header .navBar a:hover {
 }
 .main .main-right .main-image {
   max-width: 100%;
+  margin: 1.5%;
+}
+.largeQuote {
+  width: 100%;
+  background-color: #FF5A5F;
+}
+.largeQuote .largeQuotePara {
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: 10rem;
+  font-size: 3rem;
+  color: #484848;
 }
