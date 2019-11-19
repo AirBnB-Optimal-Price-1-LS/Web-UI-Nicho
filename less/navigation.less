@@ -7,13 +7,26 @@ header{
     margin-top: 1%;
     margin-bottom: 2%;
 
+    @media @mobile{
+        .phoneFlex();
+    }
+
     .navLogo{
         width: 30%;
+
+        @media @mobile{
+            width: 100%;
+            text-align: center;
+        }
     }// end navLogo
     .navBar{
         width: 50%;
         display: flex;
         justify-content: space-between;
+
+        @media @mobile{
+            .phoneNav();
+        }
 
         a {
             font-size: 2.2rem;

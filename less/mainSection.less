@@ -5,6 +5,10 @@
     margin-left: 5%;
     margin-right: 5%;
 
+    @media @mobile{
+        .mainSection-flex();
+    }
+
     .main-left{
         width: 40%;
         display: flex;
@@ -13,21 +17,38 @@
         align-items: center;
         margin: 1%;
 
+        @media @mobile{
+            .mainLeft-flex();
+        }
+
         h1{
             width: 100%;
             font-size: 7.5rem;
             margin-bottom: 5%;
             color: @airBNB-red;
+
+            @media @mobile{
+                font-size: 5rem;
+                text-align: center;
+            }
         }
         p{
             width: 100%;
             font-size: 2.7rem;
             margin-bottom: 3%;
             color: @airBNB-green;
+
+            @media @mobile{
+                text-align: center;
+            }
         }
         .buttonDiv{
             width: 100%;
             margin-bottom: 2.5%;
+
+            @media @mobile{
+                text-align: center;
+            }
             
             button{
                 text-align: center;
@@ -65,5 +86,9 @@
     line-height: 10rem;
     font-size: 3rem;
     color: @airBNB-gray;
+
+    @media @tablet{
+        .quoteTablet();
+    }
     }
 }
