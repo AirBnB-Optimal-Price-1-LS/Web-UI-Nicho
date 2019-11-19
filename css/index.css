@@ -164,15 +164,6 @@ header .navBar a:hover {
   text-decoration: none;
   color: #00A699;
 }
-.largeQuote {
-  width: 100%;
-  background-color: #FF5A5F;
-}
-.largeQuote .largeQuotePara {
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: 3.75rem;
-}
 .main {
   display: flex;
   align-items: flex-start;
@@ -186,19 +177,23 @@ header .navBar a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 1%;
 }
 .main .main-left h1 {
-  font-size: 8rem;
+  width: 100%;
+  font-size: 7.5rem;
   margin-bottom: 5%;
   color: #FF5A5F;
 }
 .main .main-left p {
+  width: 100%;
   font-size: 2.7rem;
   margin-bottom: 3%;
   color: #00A699;
 }
 .main .main-left .buttonDiv {
   width: 100%;
+  margin-bottom: 2.5%;
 }
 .main .main-left .buttonDiv button {
   text-align: center;
@@ -216,4 +211,52 @@ header .navBar a:hover {
 }
 .main .main-right .main-image {
   max-width: 100%;
+  margin: 1.5%;
+}
+.largeQuote {
+  width: 100%;
+  background-color: #FF5A5F;
+  margin-bottom: 3.5%;
+  box-shadow: 10px 15px #484848;
+}
+.largeQuote .largeQuotePara {
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: 10rem;
+  font-size: 3rem;
+  color: #484848;
+}
+.testimony {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.testimony .subContainer {
+  border: 3px solid #FF5A5F;
+  width: 80%;
+  margin-bottom: 3%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 10px #767676;
+}
+.testimony .subContainer h3 {
+  font-size: 3rem;
+  margin-top: 1%;
+  color: #FF5A5F;
+}
+.testimony .subContainer p {
+  margin-top: 1%;
+  font-size: 1.8rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #767676;
+}
+.testimony .subContainer img {
+  margin-bottom: 2%;
 }

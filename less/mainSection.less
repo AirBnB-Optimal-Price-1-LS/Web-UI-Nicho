@@ -11,19 +11,23 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        margin: 1%;
 
         h1{
-            font-size: 8rem;
+            width: 100%;
+            font-size: 7.5rem;
             margin-bottom: 5%;
             color: @airBNB-red;
         }
         p{
+            width: 100%;
             font-size: 2.7rem;
             margin-bottom: 3%;
             color: @airBNB-green;
         }
         .buttonDiv{
             width: 100%;
+            margin-bottom: 2.5%;
             
             button{
                 text-align: center;
@@ -43,6 +47,23 @@
         width: 60%;
         .main-image{
             max-width: 100%;
+            margin: 1.5%;
+            //overflow: hidden;
         }
     }// main right flex-box ends here
 }//main container ends here
+
+.largeQuote{
+    width: 100%;
+    background-color: @airBNB-red;
+    margin-bottom: 3.5%;
+    box-shadow: 10px 15px @airBNB-gray;
+
+    .largeQuotePara{
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 10rem;
+    font-size: 3rem;
+    color: @airBNB-gray;
+    }
+}
