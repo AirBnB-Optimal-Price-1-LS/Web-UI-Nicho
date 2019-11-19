@@ -177,7 +177,11 @@ h2 {
 .features p {
   font-size: 1.6rem;
   width: 85%;
-  margin: auto;
+  margin: 5%, auto;
+}
+.features img {
+  width: 85%;
+  margin: 2% 0 8% 8%;
 }
 #footerNav a {
   font-size: 1.5rem;
