@@ -1,2 +1,3 @@
-.gitignore
+css/index.css
 node_modules
+.DS_Store
