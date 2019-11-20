@@ -13,6 +13,12 @@ h2{
     display: flex;
     width:90%;
     margin:auto;
+
+    @media @tablet{
+        display:flex;
+        flex-direction: column;
+    }
+
     @media @mobile{
         display:flex;
         flex-direction: column;
@@ -21,10 +27,7 @@ h2{
         
     }
 
-    @media @tablet{
-        display:flex;
-        flex-direction: column;
-    }
+    
     
 }
 
@@ -33,14 +36,17 @@ h2{
     width: 85%;
     margin: 5%, auto;
     color: @airBNB-gray;
-    @media @mobile{
-        margin: 5% auto;
-    }
+
     @media @tablet{
         width: 300px;
         margin: 8% auto;
         font-size: 2rem;
     }
+
+    @media @mobile{
+        margin: 5% auto;
+    }
+    
     
 
     
@@ -49,28 +55,36 @@ h2{
 .features img{
     width: 85%;
     margin: 2% 0 8% 0%;
-    @media @mobile{
-        margin: 5% 8%;
-    }
+
     @media @tablet{
         width: 80%;
     }
+    @media @mobile{
+        margin: 5% 8%;
+    }
+    
 
     
 }
 
 .features .coins{
     width: 88%;
-    @media @mobile{
-        margin: 5% 5%;
-    }
+
     @media @tablet{
         width: 80%;
         margin: 3% 10% 3% 25%;
     }
+    @media @mobile{
+        margin: 5% 5%;
+    }
+    
 }
 
 #feature1{
+    @media @mobile{
+        display: flex;
+        flex-direction: column;
+    }
     @media @tablet{
         display:flex;
 
@@ -82,10 +96,18 @@ h2{
         display:flex;
         flex-direction: row-reverse;
     }
+    @media @mobile{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 #feature3{
     @media @tablet{
         display:flex;
+    }
+    @media @mobile{
+        display: flex;
+        flex-direction: column;
     }
 }
