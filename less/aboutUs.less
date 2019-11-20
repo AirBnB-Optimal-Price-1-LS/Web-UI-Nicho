@@ -1,0 +1,68 @@
+
+.meet{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    color: @airBNB-lightGray;
+    margin-bottom: 5%;
+
+
+}
+.headShotContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20%;
+
+    .teamMember{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 20%;
+        height: 40%;
+        filter: grayscale(100%);
+
+        &:hover{
+            filter: none;
+            background-color: #D3D3D3;
+        }
+
+
+
+        div {
+            margin-top: 1.5%;
+            margin-bottom: 1.5%;
+            margin-right: 1%;
+            text-align: center;
+
+            h4{
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+.footer-section{
+    width: 100%;
+    border-top: 2px solid @airBNB-lightGray;
+    background-color: @airBNB-red;
+    flex-shrink: 0;
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+
+        a{
+            line-height: 4rem;
+            font-size: 2rem;
+            text-decoration: none;
+            color: @airBNB-gray;
+        }
+    }
+}

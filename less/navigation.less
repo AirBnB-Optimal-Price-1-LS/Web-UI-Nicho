@@ -7,14 +7,30 @@ header{
     margin-top: 1%;
     margin-bottom: 2%;
 
+<<<<<<< HEAD
     .navLogo{
         width: 30%;
     }
+=======
+    @media @mobile{
+        .phoneFlex();
+    }
+
+    .navLogo{
+        width: 30%;
+
+        @media @mobile{
+            width: 100%;
+            text-align: center;
+        }
+    }// end navLogo
+>>>>>>> b8bb17b07a2fe9bbcc9ccf1003e32e5a0fb90570
     .navBar{
         width: 50%;
         display: flex;
         justify-content: space-between;
 
+<<<<<<< HEAD
         a {
             font-size: 1.8rem;
             text-decoration: none;
@@ -25,3 +41,22 @@ header{
         }
     }
 }
+=======
+        @media @mobile{
+            .phoneNav();
+        }
+
+        a {
+            font-size: 2.2rem;
+            text-decoration: none;
+            color: @airBNB-red;
+
+            &:hover{
+                text-decoration: none;
+                color: @airBNB-green;
+            }
+        }
+    }//end navBar
+}//end header
+
+>>>>>>> b8bb17b07a2fe9bbcc9ccf1003e32e5a0fb90570

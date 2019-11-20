@@ -1,0 +1,94 @@
+.main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    @media @mobile{
+        .mainSection-flex();
+    }
+
+    .main-left{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1%;
+
+        @media @mobile{
+            .mainLeft-flex();
+        }
+
+        h1{
+            width: 100%;
+            font-size: 7.5rem;
+            margin-bottom: 5%;
+            color: @airBNB-red;
+
+            @media @mobile{
+                font-size: 5rem;
+                text-align: center;
+            }
+        }
+        p{
+            width: 100%;
+            font-size: 2.7rem;
+            margin-bottom: 3%;
+            color: @airBNB-green;
+
+            @media @mobile{
+                text-align: center;
+            }
+        }
+        .buttonDiv{
+            width: 100%;
+            margin-bottom: 2.5%;
+
+            @media @mobile{
+                text-align: center;
+            }
+            
+            button{
+                text-align: center;
+                width: 80%;
+                margin-right: 5%;
+                margin-left: 5%;
+                line-height: 5rem;
+                border-radius: 15px;
+                background-color: @airBNB-red;
+                font-size: 2rem;
+                color: @airBNB-gray;
+            }
+        }
+
+    }// main left flex-box ends here
+    .main-right{
+        width: 60%;
+        .main-image{
+            max-width: 100%;
+            margin: 1.5%;
+            //overflow: hidden;
+        }
+    }// main right flex-box ends here
+}//main container ends here
+
+.largeQuote{
+    width: 100%;
+    background-color: @airBNB-red;
+    margin-bottom: 3.5%;
+    box-shadow: 10px 15px @airBNB-gray;
+
+    .largeQuotePara{
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 4rem;
+    font-size: 2.7rem;
+    color: @airBNB-gray;
+
+    @media @tablet{
+        .quoteTablet();
+    }
+    }
+}
