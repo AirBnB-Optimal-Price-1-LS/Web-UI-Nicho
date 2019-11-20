@@ -17,14 +17,29 @@
     margin-right: 5%;
     margin-bottom: 20%;
 
+    @media @mobile{
+        .mobileAbout();
+    }
+
     .teamMember{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         width: 20%;
-        height: 40%;
+        height: 100%;
         filter: grayscale(100%);
+
+        @media @mobile{
+            .mobileIndividual();
+        }
+
+        .headShot{
+            margin-top: 2.5%;
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+        }
 
         &:hover{
             filter: none;
@@ -41,10 +56,14 @@
 
             h4{
                 text-transform: uppercase;
+                font-size: 1.6rem;
+            }
+            h6{
+                font-size: 1.4rem;
             }
         }
-    }
-}
+    }// team member div ends here
+}// flexed array for all team member head shots ends here
 
 
 .footer-section{
