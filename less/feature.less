@@ -1,6 +1,6 @@
 h2{
     font-size: 3rem;
-    margin: 5% auto;
+    margin: 5%;
     color: @airBNB-red;
     @media @mobile{
         text-align: center;
@@ -20,15 +20,28 @@ h2{
         align-items: center;
         
     }
+
+    @media @tablet{
+        display:flex;
+        flex-direction: column;
+    }
+    
 }
 
 .features p{
     font-size: 1.6rem;
     width: 85%;
     margin: 5%, auto;
+    color: @airBNB-gray;
     @media @mobile{
         margin: 5% auto;
     }
+    @media @tablet{
+        width: 300px;
+        margin: 8% auto;
+        font-size: 2rem;
+    }
+    
 
     
 }
@@ -39,6 +52,10 @@ h2{
     @media @mobile{
         margin: 5% 8%;
     }
+    @media @tablet{
+        width: 80%;
+    }
+
     
 }
 
@@ -47,5 +64,28 @@ h2{
     @media @mobile{
         margin: 5% 5%;
     }
+    @media @tablet{
+        width: 80%;
+        margin: 3% 10% 3% 25%;
+    }
 }
 
+#feature1{
+    @media @tablet{
+        display:flex;
+
+    }
+}
+
+#feature2{
+    @media @tablet{
+        display:flex;
+        flex-direction: row-reverse;
+    }
+}
+
+#feature3{
+    @media @tablet{
+        display:flex;
+    }
+}
